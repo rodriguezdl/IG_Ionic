@@ -15,12 +15,12 @@
             </ion-item>
           </ion-menu-toggle> -->
         </ion-list>
-        <ion-item *ngFor="let username of user, let i = index">
+        <ion-item *ngFor="let username of labels">
           <ion-avatar>
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
           </ion-avatar>
             <ion-label>
-              <h3>{{ username.user}}</h3>
+              <h3>{{ username }}</h3>
               <!-- <p>{{ username.time_elapsed }}</p> -->
             </ion-label>
         </ion-item>

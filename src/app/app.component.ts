@@ -44,26 +44,7 @@ export class AppComponent implements OnInit {
   //   }
   // ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  // public labels = ['John','Jerry','Elise','Elo', 'Thais']
-  // public time_elapsed = ['Last seen 30 min. ago', 'Last seen 2 hour ago', 'Last seen 5 hours ago', 'Last seen yesterdy']
-  public user = [
-    {
-      user: 'John',
-      // time_elapsed: timeSince()
-    },
-    {
-      user:'Jerry',
-      // time_elapsed: timeSince()
-    },
-    {
-      user: 'Elise',
-      // time_elapsed: timeSince()
-    },
-    {
-      user: 'Elo',
-      // time_elapsed: timeSince()
-    }
-  ]
+  public labels = ['John','Jerry','Elise','Elo', 'Thais']
 
 
   constructor(
@@ -82,10 +63,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const path = window.location.pathname.split('folder/')[1];
-    if (path !== undefined) {
-      this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
-    }
+    // const path = window.location.pathname.split('folder/')[1];
+    // if (path !== undefined) {
+    //   this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
+    // }
   }
-
 }
