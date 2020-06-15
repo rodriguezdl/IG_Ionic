@@ -44,24 +44,24 @@ export class AppComponent implements OnInit {
   //   }
   // ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  public labels = ['John','Jerry','Elise','Elo', 'Thais']
-  public time_elapsed = ['Last seen 30 min. ago', 'Last seen 2 hour ago', 'Last seen 5 hours ago', 'Last seen yesterdy']
+  // public labels = ['John','Jerry','Elise','Elo', 'Thais']
+  // public time_elapsed = ['Last seen 30 min. ago', 'Last seen 2 hour ago', 'Last seen 5 hours ago', 'Last seen yesterdy']
   public user = [
     {
       user: 'John',
-      time_elapsed: timeSince()
+      // time_elapsed: timeSince()
     },
     {
       user:'Jerry',
-      time_elapsed: timeSince()
+      // time_elapsed: timeSince()
     },
     {
       user: 'Elise',
-      time_elapsed: timeSince()
+      // time_elapsed: timeSince()
     },
     {
       user: 'Elo',
-      time_elapsed: timeSince()
+      // time_elapsed: timeSince()
     }
   ]
 
@@ -88,8 +88,4 @@ export class AppComponent implements OnInit {
     }
   }
 
-  function timeSince(){
-    time_elapsed = 'Last seen' + Math.floor(Math.random()) + 'hours ago'
-    return time_elapsed
-  }
 }
