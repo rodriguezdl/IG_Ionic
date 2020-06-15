@@ -1,0 +1,7 @@
+{
+  "name": "ig_new",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
