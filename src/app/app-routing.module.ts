@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'discover',
     loadChildren: () => import('./discover/discover.module').then( m => m.DiscoverPageModule)
   },
+  {
+    path: 'direct-message',
+    loadChildren: () => import('./direct-message/direct-message.module').then( m => m.DirectMessagePageModule)
+  },
 ];
 
 @NgModule({

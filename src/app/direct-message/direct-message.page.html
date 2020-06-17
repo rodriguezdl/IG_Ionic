@@ -1,4 +1,4 @@
-<ion-plit-pane>
+<ion-split-pane>
   <ion-menu contentId="messages">
     <ion-header>
       <ion-toolbar>
@@ -6,9 +6,19 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion
+      <ion-list *ngFor="let username of users">
+        <ion-avatar>
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+        <ion-label>{{ username }}</ion-label>
+      </ion-list>
     </ion-content>
-    
   </ion-menu>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Hi</ion-title>
+    </ion-toolbar>
+</ion-footer>
 
-</ion-plit-pane>
+</ion-split-pane>

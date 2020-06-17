@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { DirectMessagePageRoutingModule } from './direct-message-routing.module';
 
 import { DirectMessagePage } from './direct-message.page';
-import { SidebarDmComponent } from '../components/sidebar-dm/sidebar-dm.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,6 @@ import { SidebarDmComponent } from '../components/sidebar-dm/sidebar-dm.componen
     IonicModule,
     DirectMessagePageRoutingModule
   ],
-  declarations: [DirectMessagePage, SidebarDmComponent]
+  declarations: [DirectMessagePage]
 })
 export class DirectMessagePageModule {}
