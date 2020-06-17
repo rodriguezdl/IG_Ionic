@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./direct-message.page.scss'],
 })
 export class DirectMessagePage implements OnInit {
-  public users =['Daniel','Yadu','E for Pres.','Jon','Darren']
+  public users = ['Daniel', 'Yadu', 'E for Pres.','Jon','Darren'];
 
   messages = [
   {
@@ -16,7 +16,7 @@ export class DirectMessagePage implements OnInit {
   },
   {
     user: 'E for Pres.',
-    createdAt: 155409085600;
+    createdAt: 155409085600,
     msg: 'nm'
   }
 ]
