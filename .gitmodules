@@ -1,0 +1,3 @@
+[submodule "ig_ionic_backend"]
+	path = ig_ionic_backend
+	url = git@github.com:ytpillai/ig_ionic_backend.git
