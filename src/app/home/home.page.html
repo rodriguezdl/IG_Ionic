@@ -1,0 +1,56 @@
+<ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>Instagram</ion-list-header>
+          <ion-label>Home</ion-label>
+          <ion-label>Discover</ion-label>
+          <ion-label>Likes</ion-label>
+          <ion-label>More</ion-label>
+          <ion-label>Upload</ion-label>
+        </ion-list>
+        <ion-item *ngFor="let username of labels">
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+            <ion-label>
+              <h3> {{ username }}</h3>
+              <p> Last seen {{ time_elapsed }} hours ago </p>
+            </ion-label>
+        </ion-item>
+        <ion-label routerLink="/home" routerDirection="root">Home</ion-label>
+      </ion-content>
+    </ion-menu>
+    <!-- <ion-router-outlet id="main-content"></ion-router-outlet> -->
+    <ion-content>
+        <ion-card>
+            <ion-card-header>
+              <ion-avatar>
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+              </ion-avatar>
+              <ion-card-title>Username</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+             My dog went rabid today and now I have to take a yadu.
+            </ion-card-content>
+            <img src="/assets/pics/index.jpg">
+        </ion-card>
+        <ion-card>
+            <ion-card-header>
+              <ion-avatar>
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+              </ion-avatar>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>Username</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+             My dog went rabid today and now I have to take a yadu.
+            </ion-card-content>
+            <img src="/assets/pics/index.jpg">
+        </ion-card>
+    </ion-content>
+</ion-split-pane>
+
+

@@ -8,15 +8,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SidebarDmComponent } from './components/sidebar-dm/sidebar-dm.component';
+import { DirectMessagePage } from './direct-message/direct-message.page';
+// import { HomeSidebarComponent } from './components/home-sidebar/home-sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,SidebarDmComponent, DirectMessagePage],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
-  ],
+    AppRoutingModule  ],
   providers: [
     StatusBar,
     SplashScreen,
