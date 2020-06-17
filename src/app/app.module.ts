@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SidebarDmComponent } from './components/sidebar-dm/sidebar-dm.component';
 import { DirectMessagePage } from './direct-message/direct-message.page';
+
 // import { HomeSidebarComponent } from './components/home-sidebar/home-sidebar.component';
 
 @NgModule({
