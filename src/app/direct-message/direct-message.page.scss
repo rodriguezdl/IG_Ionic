@@ -1,0 +1,45 @@
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+
+.my-message {
+    background: var(--ion-color-light);
+    color:black;
+   
+}
+
+.other-message{
+    background: var(--ion-color-tertiary);
+
+}
+
+ion-split-pane {
+    --side-max-width:50%;
+}
+
+.text-area {
+    --border-radius: 5%;
+}
+
+ion-footer {
+    position:0;
+    bottom:0;
+}
+
+.msg-btn {
+    --padding-start: 0.5em;
+    --padding-right: 1em;
+}
+
+
+// #menu {
+//     width: 40%;
+// }
+
+// #message-thread {
+//     width: 60%;
+// }
+
