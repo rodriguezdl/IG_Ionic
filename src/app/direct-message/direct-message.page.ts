@@ -37,8 +37,8 @@ export class DirectMessagePage implements OnInit {
   sendMessage() {
       this.messages.push({
         user: 'Daniel',
-        createdAt:
-        msg:this.newMsg
+        createdAt:155409085600,
+        msg:this.newMsg,
       });
     }
     
