@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./direct-message.page.scss'],
 })
 export class DirectMessagePage implements OnInit {
-<<<<<<< HEAD
   public users = ['Daniel', 'Yadu', 'E for Pres.', 'Jon', 'Darren', 'Vasu']
   public newMsg:any;
 
@@ -34,27 +33,11 @@ export class DirectMessagePage implements OnInit {
   ];
 
   currentUser = 'Daniel';
-=======
-  public users = ['Daniel', 'Yadu', 'E for Pres.','Jon','Darren'];
-
-  messages = [
-  {
-    user: 'Daniel',
-    createdAt: 155409085600,
-    msg: 'Whats up?'
-  },
-  {
-    user: 'E for Pres.',
-    createdAt: 155409085600,
-    msg: 'nm'
-  }
-]
->>>>>>> 53af74074550bb1c7342af7a26a29d82c7adc5fe
 
   sendMessage() {
       this.messages.push({
         user: 'Daniel',
-        createdAt: 155409085600,
+        createdAt:
         msg:this.newMsg
       });
     }
