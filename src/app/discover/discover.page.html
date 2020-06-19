@@ -5,12 +5,12 @@
         <ion-title>Discover</ion-title>
       </ion-toolbar>
     </ion-header>
+    <!-- Instagram Tag Buttons -->
     <ion-content>
-
       <ion-searchbar animated color="light"></ion-searchbar>
-      <ion-list>
+      <ion-list lines="none">
         <ion-item>
-          <ion-button size="large" fill="clear" class="disc_button">
+          <ion-button size="large" >
             <ion-icon name="tv-outline"></ion-icon>
             IGTV
           </ion-button>
@@ -23,7 +23,7 @@
         </ion-item>
         <ion-item>
           <ion-button size="large" fill="clear">
-            
+            <ion-icon name="star-half"></ion-icon>
             Decor
           </ion-button>
         </ion-item>
@@ -31,8 +31,18 @@
           <ion-button size="large" fill="clear">
             <ion-icon name="tv-outline"></ion-icon>
             Shop
+          </ion-button>
         </ion-item>
       </ion-list>
     </ion-content>
+    <app-stories></app-stories>
   </ion-menu>
+  
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>
+        c<img src="/index.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
 </ion-split-pane>

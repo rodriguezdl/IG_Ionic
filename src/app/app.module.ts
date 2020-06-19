@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { DirectMessagePage } from './direct-message/direct-message.page';
+import { StoriesComponent } from './components/stories/stories.component'
 
 // import { HomeSidebarComponent } from './components/home-sidebar/home-sidebar.component';
 

@@ -8,10 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
@@ -26,6 +22,10 @@ const routes: Routes = [
   {
     path: 'direct-message',
     loadChildren: () => import('./direct-message/direct-message.module').then( m => m.DirectMessagePageModule)
+  },
+  {
+    path: 'likes',
+    loadChildren: () => import('./likes/likes.module').then( m => m.LikesPageModule)
   },
 ];
 

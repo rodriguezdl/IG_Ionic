@@ -1,5 +1,5 @@
 ion-split-pane {
-  --side-max-width: 100%;
+  --side-max-width: 60%;
 }
 
 #menu {
@@ -8,4 +8,12 @@ ion-split-pane {
 
 #main {
   width: 60%;
+}
+
+.location {
+  --inner-padding-start: 0;
+}
+
+.profile {
+  --inner-padding-start: 0;
 }
