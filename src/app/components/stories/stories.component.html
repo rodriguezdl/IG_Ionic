@@ -1,32 +1,20 @@
 <ion-label>Stories</ion-label>
 <ion-item lines="none">
-  <ion-grid class="stories">
-    <ion-row>
-      <ion-scroll scrollx="true">
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
+    <ion-grid class="stories">
 
+        <ion-row>
+            <ion-item no-lines>
+                <ion-scroll scrollX="true" scroll-avatar>
+                    <ion-avatar *ngFor="let image of images">
+                        <div class="scroll-item">
+                            <span>{{image.user}}</span>
+                            <img [src]='image.url'>
+                        </div>
 
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
-        <ion-avatar>
-          <img src="/assets/pics/index.jpg">
-        </ion-avatar>
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
-        <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
-        <!-- <ion-label>User</ion-label> -->
-        <!-- </ion-item> -->
-      </ion-scroll>
-    </ion-row>
+                    </ion-avatar>
+                </ion-scroll>
+            </ion-item>
 
-  </ion-grid>
+        </ion-row>
+    </ion-grid>
 </ion-item>
