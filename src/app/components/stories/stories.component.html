@@ -4,7 +4,7 @@
 
         <ion-row>
             <ion-item no-lines>
-                <ion-scroll scrollX="true" scroll-avatar>
+                <div scrollY="true" scroll-avatar>
                     <ion-avatar *ngFor="let image of images">
                         <div class="scroll-item">
                             <span>{{image.user}}</span>
@@ -12,7 +12,7 @@
                         </div>
 
                     </ion-avatar>
-                </ion-scroll>
+                </div>
             </ion-item>
 
         </ion-row>
