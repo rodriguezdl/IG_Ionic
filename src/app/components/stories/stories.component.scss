@@ -22,19 +22,12 @@ ion-label {
     white-space: nowrap;
 }
 
-div[scrollx=true], div[scrolly=true] {
-    position: relative;
-    overflow: hidden;
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
+div.scroll-item {
+    overflow: auto;
+    white-space: nowrap;
 }
 
-div[scrollx=true] {
-    overflow-x: auto;
-}
+div.scroll-item ion-avatar {
+    display: inline-block;
 
-div[scrolly=true] {
-    overflow-y: auto;
 }
