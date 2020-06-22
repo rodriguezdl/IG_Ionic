@@ -16,6 +16,11 @@ ion-label {
     border-width: 1px;
     border-radius: 15px 15px 15px 15px;
 }
+
+.stories-scroll {
+    overflow: scroll;
+    white-space: nowrap;
+}
 // ion-scroll[scrollX] {
 //     white-space: nowrap;
 //     height: 120px;

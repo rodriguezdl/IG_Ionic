@@ -25,11 +25,6 @@ export class DirectMessagePage implements OnInit {
       createdAt:155409085600,
       msg: 'Wanna play some soccer?'
     },
-    {
-      user:'Daniel',
-      createdAt: 155409085600,
-      newMsg: 'This is the message'
-    }
   ];
 
   currentUser = 'Daniel';

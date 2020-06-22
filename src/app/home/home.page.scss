@@ -17,3 +17,15 @@ ion-split-pane {
 .profile {
   --inner-padding-start: 0;
 }
+
+img {
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+ion-card {
+  border-radius: 15px 15px 15px 15px;
+}

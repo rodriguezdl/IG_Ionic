@@ -16,6 +16,6 @@ import { StoriesComponent } from '../components/stories/stories.component';
     IonicModule,
     DiscoverPageRoutingModule
   ],
-  declarations: [DiscoverPage,StoriesComponent]
+  declarations: [DiscoverPage]
 })
 export class DiscoverPageModule {}
