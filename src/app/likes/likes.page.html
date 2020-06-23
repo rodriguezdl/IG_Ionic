@@ -1,10 +1,10 @@
 <ion-toolbar>
   <ion-header>
-    <ion-item>
-      <ion-item href="/home">
+    <ion-item lines="none">
+      <ion-item href="/home" lines="none">
         <ion-icon name="arrow-back-outline" class="back-btn"></ion-icon>
       </ion-item>
-      <ion-title>likes</ion-title>
+      <ion-title>Likes</ion-title>
     </ion-item>
   </ion-header>
 </ion-toolbar>
@@ -13,37 +13,17 @@
   <ion-grid>
     <ion-col>
       <ion-row>
-        <ion-card>
-          <img src="assets/pics/index.jpg">
-          <ion-card-content>
-            <ion-icon name="heart"></ion-icon>
-            (User) liked this photo
-          </ion-card-content>
-        </ion-card>
-        <ion-card>
-          <img src="assets/pics/index.jpg">
-          <ion-card-content>
-            <ion-icon name="heart"></ion-icon>
-            (User) liked this photo
-          </ion-card-content>
-        </ion-card>
-        <ion-card>
-          <img src="assets/pics/index.jpg">
-          <ion-card-content>
-            <ion-icon name="heart"></ion-icon>
-            (User) liked this photo
-          </ion-card-content>
-        </ion-card>
-        <ion-card>
-          <img src="assets/pics/index.jpg">
-          <ion-card-content>
-            <ion-icon name="heart"></ion-icon>
-            (User) liked this photo
-          </ion-card-content>
-        </ion-card>
-
-
-
+        <ion-item-group *ngFor="let like of likes">
+          <ion-item>
+            <ion-card>
+              <img src={{like.image}}>
+              <ion-card-content>
+                <ion-icon name="heart"></ion-icon>
+                {{like.user}} liked this photo
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-item-group>
       </ion-row>
     </ion-col>
   </ion-grid>

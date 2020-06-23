@@ -12,11 +12,11 @@ export class LikesPage implements OnInit {
   },
   {
     user: 'Darren',
-    image: 'assets/pics/index.jpg'
+    image: 'assets/pics/gorge.jpg'
   },
   {
     user: 'Yadu',
-    image: 'assets/pics/index.jpg'
+    image: 'assets/pics/japan.jpg'
   },
 ]
 

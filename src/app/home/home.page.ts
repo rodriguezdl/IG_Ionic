@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  public feed = [{
+    user: 'Daniel',
+    image: '/assets/pics/sunflower.jpg'
+  },
+  {
+    user: 'Darren',
+    image:'/assets/pics/gorge.jpg'
+  },
+  {
+    user: 'Yadu',
+    image: '/assets/pics/japan.jpg'
+  },
+  ]
 
   constructor() { }
 
