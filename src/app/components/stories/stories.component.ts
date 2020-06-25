@@ -26,6 +26,18 @@ export class StoriesComponent implements OnInit {
         {
             user: 'Darren',
             url: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'
+        },
+        {
+            user: 'Darren',
+            url: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'
+        },
+        {
+            user: 'Darren',
+            url: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'
+        },
+        {
+            user: 'Darren',
+            url: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'
         }
     ];
 

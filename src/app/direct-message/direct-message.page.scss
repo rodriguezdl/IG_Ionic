@@ -9,11 +9,17 @@
 .my-message {
     background: var(--ion-color-light);
     color:black;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px 50px 50px 50px;
    
 }
 
 .other-message{
     background: var(--ion-color-tertiary);
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px 50px 50px 50px;
 
 }
 

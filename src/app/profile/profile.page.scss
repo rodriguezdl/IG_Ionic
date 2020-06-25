@@ -1,10 +1,42 @@
-ion-avatar {
-    width: 50%;
-    height: 50%;
-    max-width: 100%;
-    max-height: 100%;
+.left {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-size: cover;
 }
 
 ion-split-pane {
-    --side-max-width: 60%;
+  --side-max-width: 50%;
+}
+
+ion-label {
+  margin: auto;
+}
+
+.followerCount {
+  margin: auto;
+  padding: .025px;
+}
+
+#main {
+  width: 60%;
+}
+
+#menu {
+  width: 40%;
+}
+
+.bio {
+  text-align: center;
+}
+
+.edit_profile {
+    margin: auto;
+    padding: 5px;
+}
+
+.back {
+    top: 0;
+    left: 0;
+    position: absolute;
 }

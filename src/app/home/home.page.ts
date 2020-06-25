@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
   public feed = [{
     user: 'Daniel',
-    image: '/assets/pics/sunflower.jpg'
+    image: '/assets/pics/sunflower.jpg',
+    profileImg: '/assets/pics/Daniel-profile.jpg'
   },
   {
     user: 'Darren',

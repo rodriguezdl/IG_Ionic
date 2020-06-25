@@ -5,8 +5,8 @@
       <ion-item no-lines>
         <div class="scroll-item">
           <ion-avatar *ngFor="let image of images">
-            <span>{{image.user}}</span>
             <img [src]='image.url'>
+            <span>{{image.user}}</span>
           </ion-avatar>
         </div>
       </ion-item>

@@ -1,7 +1,8 @@
 {
   "name": "ig_new",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

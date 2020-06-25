@@ -3,8 +3,8 @@
   <ion-menu id="menu" contentId="main">
     <!-- <ion-header> -->
     <ion-item lines="none">
-      <ion-toolbar>
-        <ion-item lines="none">
+      <ion-toolbar mode="ios">
+        <ion-item lines="none" mode="ios">
           <ion-title>Instagram</ion-title>
           <ion-item lines="none" href="/direct-message">
             <ion-icon name="send-outline" slot="end"></ion-icon>
@@ -41,7 +41,7 @@
     <ion-item href="/profile">
       <ion-chip class="profile">
         <ion-avatar>
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          <img src="/assets/pics/Daniel-profile.jpg">
         </ion-avatar>
         <ion-label>Username</ion-label>
       </ion-chip>
@@ -52,7 +52,7 @@
   <!-- the main content -->
   <!-- <ion-router-outlet id="main"></ion-router-outlet> -->
   <ion-content id="main">
-    <ion-item-group lines="none" *ngFor="let item of feed">
+    <ion-item-group lines="none" *ngFor="let item of feed" style="padding:0px !important;">
       <ion-card>
         <img src={{item.image}} style="widht: 50px">
         <ion-card-header>
@@ -60,7 +60,7 @@
             <ion-item lines="none">
               <ion-chip>
                 <ion-avatar>
-                  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                  <img src={{item.profileImg}}>
                 </ion-avatar>
                 <ion-label>{{item.user}}</ion-label>
               </ion-chip>
