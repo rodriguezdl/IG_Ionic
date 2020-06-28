@@ -5,6 +5,13 @@
   background-size: cover;
 }
 
+ion-card {
+  border-style: solid;
+  border-color: black;
+  border-width: .5px;
+  border-radius: 20px 20px 20px 20px;
+}
+
 ion-split-pane {
   --side-max-width: 50%;
 }
@@ -15,7 +22,7 @@ ion-label {
 
 .followerCount {
   margin: auto;
-  padding: .025px;
+  padding: 0.025px;
 }
 
 #main {
@@ -31,12 +38,12 @@ ion-label {
 }
 
 .edit_profile {
-    margin: auto;
-    padding: 5px;
+  margin: auto;
+  padding: 5px;
 }
 
 .back {
-    top: 0;
-    left: 0;
-    position: absolute;
+  top: 0;
+  left: 0;
+  position: absolute;
 }

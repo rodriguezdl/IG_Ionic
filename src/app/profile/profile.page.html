@@ -1,10 +1,10 @@
 <ion-split-pane>
   <ion-item lines="none" id="main">
     <ion-grid>
-        <ion-item href="/home" lines="none" class="back">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-          <ion-title>Messages</ion-title>
-        </ion-item>
+      <ion-item href="/home" lines="none" class="back">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <ion-title>Messages</ion-title>
+      </ion-item>
 
       <ion-row>
         <ion-col>
@@ -14,7 +14,8 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-label>Username</ion-label>
+        <app-popover (output)="receiveUsername($event)"></app-popover>
+        <ion-label>Username:{{Username}}</ion-label>
       </ion-row>
       <ion-row>
         <ion-item class="followerCount" lines="none">
@@ -36,7 +37,7 @@
         </ion-text>
       </ion-row>
       <ion-row>
-          <ion-button class="edit_profile" size="large" color="light">Edit Profile</ion-button>
+        <ion-button class="edit_profile" size="large" color="light" (click)="presentPopover()">Edit Profile</ion-button>
       </ion-row>
     </ion-grid>
   </ion-item>
