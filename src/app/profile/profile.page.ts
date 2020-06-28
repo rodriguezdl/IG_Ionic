@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { PopoverComponent } from '../popover/popover.component';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +8,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
+  Username: string;
 
-  constructor() { }
+  constructor(public popoverController: PopoverController) { }
 
   ngOnInit() {
   }
+
+  async presentPopover(ev: any) {
+    const popover = await this.popoverController.create({
+      component: PopoverComponent,
+      componentProps: {
+
+      },
+      cssClass: 'popOver',
+      event: ev,
+      translucent: true
+    });
+    return await popover.present();
+  }
+
+  receiveUsername($event){
+    this.Username = $event;
+  }
+
+  
 
 }
