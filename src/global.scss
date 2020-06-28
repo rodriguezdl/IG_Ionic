@@ -24,3 +24,9 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.popOver {
+    --background-opacity: 0;
+    --width: 500px;
+    border-radius: 30px 30px 30px 30px;
+}

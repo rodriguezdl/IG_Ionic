@@ -1,0 +1,33 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      
+        <ion-group-item>
+
+          <ion-item class="text" lines="none">
+            <ion-item lines="none">
+              <ion-label>Username</ion-label>
+            </ion-item>
+            <ion-input>
+              <input type="text" [(ngModel)]="user">
+            </ion-input> 
+          </ion-item>
+          <ion-item class="text" lines="none">
+            <ion-item lines="none" class="user_label">
+              <ion-label>Bio</ion-label>
+            </ion-item>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+          <ion-item class="text" lines="none">
+            <ion-item lines="none">
+              <ion-label>Website Url</ion-label>
+            </ion-item>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+          <ion-item lines="none" showBackdrop="true">
+            <ion-button size="large" (click)="passToParent()">Submit</ion-button>
+          </ion-item>
+        </ion-group-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
