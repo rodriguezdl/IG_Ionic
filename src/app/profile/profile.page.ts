@@ -30,6 +30,7 @@ export class ProfilePage implements OnInit {
 
   receiveUsername($event){
     this.Username = $event;
+    console.log(this.Username);
   }
 
   
