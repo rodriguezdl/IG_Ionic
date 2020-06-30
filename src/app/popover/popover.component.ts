@@ -1,4 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {PopoverController} from '@ionic/angular';
 
 @Component({
     selector: 'app-popover',
@@ -8,16 +9,16 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class PopoverComponent implements OnInit {
     user: string;
 
-    @Output() output = new EventEmitter<string>();
+    @Output() userOutput: EventEmitter<any> = new EventEmitter();
 
-    constructor() {
+    constructor(public popover: PopoverController) {
     }
 
     ngOnInit() {
     }
 
     passToParent() {
-        this.output.emit(this.user);
-        console.log(this.user);
+        this.userOutput.emit(this.user);
+        console.log('POPOVER: ' + this.user);
     }
 }

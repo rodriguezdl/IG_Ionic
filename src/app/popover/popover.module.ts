@@ -14,6 +14,9 @@ import { PopoverComponent} from './popover.component';
         FormsModule,
         IonicModule,
     ],
+    exports: [
+        PopoverComponent
+    ],
     declarations: [PopoverComponent]
 })
 export class PopoverModule {}

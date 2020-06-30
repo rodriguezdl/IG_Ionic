@@ -14,8 +14,8 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <app-popover (output)="receiveUsername($event)"></app-popover>
-        <ion-label>Username:{{Username}}</ion-label>
+        <app-popover (userOutput)="receiveUsername($event)"></app-popover>
+        <ion-label>Username:{{username}}</ion-label>
       </ion-row>
       <ion-row>
         <ion-item class="followerCount" lines="none">
