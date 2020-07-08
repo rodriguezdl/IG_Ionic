@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-import { Component, OnInit } from '@angular/core';
-import { MessagesService } from '../services/frontend/messages/messages.service';
-import { Message } from '../services/frontend/messages/message.model';
-
-
-
-=======
 import {Component, OnInit} from '@angular/core';
->>>>>>> d6fbb33e78ea7e3a94f6c6ec1a6661b82ecba7b8
+import {webSocket, WebSocketSubject} from 'rxjs/webSocket';
+import {Message} from '../services/frontend/messages/message.model';
 
 @Component({
     selector: 'app-direct-message',
@@ -15,32 +8,6 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./direct-message.page.scss'],
 })
 export class DirectMessagePage implements OnInit {
-<<<<<<< HEAD
-  public users = ['Daniel', 'Yadu', 'E for Pres.', 'Jon', 'Darren', 'Vasu']
-  public newMsg:any;
-  messages: Message[] = [];
-
-  ntUcurreser = 'O_Brasileiro';
-
-  // sendMessage() {
-  //     this.messages.push({
-  //       user: 'Daniel',
-  //       createdAt:155409085600,
-  //       msg:this.newMsg,
-  //     });
-  //   }
-    
-  
-  
-  constructor(private messagesService : MessagesService) { }
-
-  ngOnInit() {
-    const messagesObservable = this.messagesService.getMessage();
-    messagesObservable.subscribe((messageData: Message[]) => {
-      this.messages = messageData;
-    })
-  }
-=======
     public users = ['Daniel', 'Yadu', 'E for Pres.', 'Jon', 'Darren', 'Vasu'];
     public newMsg: any;
 
@@ -68,7 +35,7 @@ export class DirectMessagePage implements OnInit {
         this.messages.push({
             user: 'Daniel',
             createdAt: 155409085600,
-            msg: this.newMsg,
+            msg: 'asd',
         });
     }
 
@@ -77,7 +44,14 @@ export class DirectMessagePage implements OnInit {
     }
 
     ngOnInit() {
+        const ws = webSocket('ws://127.0.0.1:44142');
+        ws.asObservable().subscribe((msg: Message) => {
+                console.log(msg);
+                this.messages.push(msg);
+            },
+            error => {
+                console.log('ASD:' + error);
+            });
     }
->>>>>>> d6fbb33e78ea7e3a94f6c6ec1a6661b82ecba7b8
 
 }
