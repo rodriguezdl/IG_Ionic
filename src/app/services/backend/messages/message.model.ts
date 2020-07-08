@@ -1,4 +1,5 @@
 export class Message {
-    user: String;
-    message: String;
+    user: string;
+    msg: string;
+    createdAt: number;
 }

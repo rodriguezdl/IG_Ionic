@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {webSocket, WebSocketSubject} from 'rxjs/webSocket';
-import {Message} from '../services/frontend/messages/message.model';
+import {Message} from '../services/backend/messages/message.model';
+
 
 @Component({
     selector: 'app-direct-message',
