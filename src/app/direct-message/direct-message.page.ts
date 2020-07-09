@@ -10,34 +10,25 @@ import {Message} from '../services/backend/messages/message.model';
 })
 export class DirectMessagePage implements OnInit {
     public users = ['Daniel', 'Yadu', 'E for Pres.', 'Jon', 'Darren', 'Vasu'];
-    public newMsg: any;
+    public newMsg: string;
+    ws: WebSocketSubject<any>;
+    messages: Message[] = [
 
-    messages = [
-        {
-            user: 'Daniel',
-            createdAt: 155409085600,
-            msg: 'Whats up?'
-        },
-        {
-            user: 'E for Pres.',
-            createdAt: 155409085600,
-            msg: 'nm'
-        },
-        {
-            user: 'Daniel',
-            createdAt: 155409085600,
-            msg: 'Wanna play some soccer?'
-        },
     ];
 
-    currentUser = 'Daniel';
+    currentUser = 'buenosdiasputa123123';
 
-    sendMessage() {
+    sendMessage(ev) {
         this.messages.push({
-            user: 'Daniel',
-            createdAt: 155409085600,
-            msg: 'asd',
+            user: this.currentUser,
+            createdAt: Date.now(),
+            msg: this.newMsg,
         });
+        this.messages.sort((a, b) => {
+            return a.createdAt < b.createdAt ? -1 : 1;
+        });
+        this.ws.next(this.newMsg.trim());
+        console.log(this.messages);
     }
 
 
@@ -45,10 +36,13 @@ export class DirectMessagePage implements OnInit {
     }
 
     ngOnInit() {
-        const ws = webSocket('ws://127.0.0.1:44142');
-        ws.asObservable().subscribe((msg: Message) => {
+        this.ws = webSocket('ws://127.0.0.1:44142');
+        this.ws.asObservable().subscribe((msg: Message[]) => {
                 console.log(msg);
-                this.messages.push(msg);
+                this.messages = this.messages.concat(msg);
+                this.messages.sort((a, b) => {
+                    return a.createdAt < b.createdAt ? -1 : 1;
+                });
             },
             error => {
                 console.log('ASD:' + error);
