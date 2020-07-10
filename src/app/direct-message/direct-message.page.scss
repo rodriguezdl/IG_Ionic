@@ -1,44 +1,44 @@
 
 .message {
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 4px;
-    white-space: pre-wrap;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  white-space: pre-wrap;
 }
 
 .my-message {
-    background: var(--ion-color-light);
-    color:black;
-    border: solid;
-    border-width: 1px;
-    border-radius: 50px 50px 50px 50px;
-   
+  background: var(--ion-color-light);
+  color: black;
+  border: solid;
+  border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
+
 }
 
-.other-message{
-    background: var(--ion-color-tertiary);
-    border: solid;
-    border-width: 1px;
-    border-radius: 50px 50px 50px 50px;
+.other-message {
+  background: var(--ion-color-tertiary);
+  border: solid;
+  border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
 
 }
 
 ion-split-pane {
-    --side-max-width:50%;
+  --side-max-width: 50%;
 }
 
 .text-area {
-    --border-radius: 5%;
+  --border-radius: 5%;
 }
 
 ion-footer {
-    position:absolute;
-    bottom:0;
+  flex: 1;
 }
 
+
 .msg-btn {
-    --padding-start: 0.5em;
-    --padding-right: 1em;
+  --padding-start: 0.5em;
+  --padding-right: 1em;
 }
 
 
