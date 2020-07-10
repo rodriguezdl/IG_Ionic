@@ -1,4 +1,5 @@
 <ion-split-pane when="md">
+<<<<<<< HEAD
   <ion-menu id="menu" contentId="messages">
     <ion-header>
       <ion-toolbar>
@@ -57,3 +58,63 @@
     </ion-footer>
   </ion-content>
 </ion-split-pane>
+=======
+    <ion-menu id="menu">
+        <ion-header>
+            <ion-toolbar>
+                <ion-item lines="none">
+                    <ion-item href="/home" lines="none">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </ion-item>
+                    <ion-title>Messages</ion-title>
+                </ion-item>
+            </ion-toolbar>
+        </ion-header>
+
+
+        <ion-list *ngFor="let username of users">
+            <ion-item>
+                <ion-avatar>
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label>{{ username }}</ion-label>
+            </ion-item>
+        </ion-list>
+
+
+    </ion-menu>
+
+    <ion-content id="messages">
+
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" *ngFor="let message of messages">
+                    <ion-row>
+                        <ion-col size="6" *ngIf="currentUser !== message.user" class="message other-message">
+                            <b>{{ message.user }}</b><br>
+                            <span>{{ message.msg }}</span>
+                        </ion-col>
+                        <ion-col offset="6" size="9" *ngIf="currentUser === message.user" class="message my-message">
+                            <b>{{ message.user }}</b><br>
+                            <span>{{ message.msg }}</span>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+
+                <ion-col size="12" align-self-bottom>
+                    <ion-item class="text-area">
+                        <ion-textarea [(ngModel)]="newMsg" cols="80" rows="1"
+                                      placeholder="Enter Message"></ion-textarea>
+                        <ion-icon name="send" (click)="sendMessage($event)" class="msg-btn"
+                                  slot="end"></ion-icon>
+                    </ion-item>
+
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+
+
+    </ion-content>
+</ion-split-pane>
+>>>>>>> 91f6ab007d78647e9b4f1a294a21fab0f5ddec3f

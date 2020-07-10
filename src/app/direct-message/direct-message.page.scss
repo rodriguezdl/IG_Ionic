@@ -6,6 +6,7 @@
 }
 
 .my-message {
+<<<<<<< HEAD
   background: #cacfd6;
   // color:black;
   // border: solid;
@@ -20,6 +21,22 @@
   //   border-width: 1px;
   border-radius: 50px 50px 50px 50px;
   filter: drop-shadow(0 0 0.6rem #e3ebff);
+=======
+  background: var(--ion-color-light);
+  color: black;
+  border: solid;
+  border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
+
+}
+
+.other-message {
+  background: var(--ion-color-tertiary);
+  border: solid;
+  border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
+
+>>>>>>> 91f6ab007d78647e9b4f1a294a21fab0f5ddec3f
 }
 
 ion-split-pane {
@@ -31,10 +48,15 @@ ion-split-pane {
 }
 
 ion-footer {
+<<<<<<< HEAD
   float: bottom;
   position: absolute;
   bottom: 0;
+=======
+  flex: 1;
+>>>>>>> 91f6ab007d78647e9b4f1a294a21fab0f5ddec3f
 }
+
 
 .msg-btn {
   --padding-start: 0.5em;
