@@ -18,17 +18,17 @@ export class DirectMessagePage implements OnInit {
     currentUser = '';
 
     sendMessage(ev) {
-        this.messages.push({
+        const tempMsg = {
             user: this.currentUser,
             createdAt: Date.now(),
             msg: this.newMsg,
             type: MessageTypes.msg,
-        });
+        };
+        this.messages.push(tempMsg);
         /*this.messages.sort((a, b) => {
             return a.createdAt < b.createdAt ? -1 : 1;
         });*/
-        this.ws.next(this.newMsg.trim());
-        console.log(this.messages);
+        this.ws.next(tempMsg);
     }
 
 
