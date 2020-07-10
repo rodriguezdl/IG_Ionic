@@ -1,46 +1,45 @@
-
 .message {
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 4px;
-    white-space: pre-wrap;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  white-space: pre-wrap;
 }
 
 .my-message {
-    background: var(--ion-color-light);
-    color:black;
-    border: solid;
-    border-width: 1px;
-    border-radius: 50px 50px 50px 50px;
-   
+  background: #cacfd6;
+  // color:black;
+  // border: solid;
+  border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
+  filter: drop-shadow(0 0 0.6rem #cacfd6);
 }
 
-.other-message{
-    background: var(--ion-color-tertiary);
-    border: solid;
-    border-width: 1px;
-    border-radius: 50px 50px 50px 50px;
-
+.other-message {
+  background: #e3ebff;
+  //   border: solid;
+  //   border-width: 1px;
+  border-radius: 50px 50px 50px 50px;
+  filter: drop-shadow(0 0 0.6rem #e3ebff);
 }
 
 ion-split-pane {
-    --side-max-width:50%;
+  --side-max-width: 50%;
 }
 
 .text-area {
-    --border-radius: 5%;
+  --border-radius: 5%;
 }
 
 ion-footer {
-    position:absolute;
-    bottom:0;
+  float: bottom;
+  position: absolute;
+  bottom: 0;
 }
 
 .msg-btn {
-    --padding-start: 0.5em;
-    --padding-right: 1em;
+  --padding-start: 0.5em;
+  --padding-right: 1em;
 }
-
 
 // #menu {
 //     width: 40%;
@@ -49,7 +48,6 @@ ion-footer {
 // #message-thread {
 //     width: 60%;
 // }
-
 
 ion-split-pane {
   --side-max-width: 100%;
@@ -62,5 +60,3 @@ ion-split-pane {
 #messages {
   width: 60%;
 }
-
-
