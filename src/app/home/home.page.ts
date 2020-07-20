@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,8 @@ export class HomePage implements OnInit {
   ]
 
   constructor() { }
+ 
+  
 
   ngOnInit() {
   }
