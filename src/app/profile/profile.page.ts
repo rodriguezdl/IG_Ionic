@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {PopoverController} from '@ionic/angular';
-import {PopoverComponent} from '../popover/popover.component';
+import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { PopoverComponent } from '../popover/popover.component';
 
 @Component({
     selector: 'app-profile',

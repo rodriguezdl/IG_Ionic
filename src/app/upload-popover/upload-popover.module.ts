@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { PopoverComponent} from './popover.component';
+import { UploadPopoverComponent } from './upload-popover.component';
 
 
 @NgModule({
@@ -12,8 +12,8 @@ import { PopoverComponent} from './popover.component';
         IonicModule,
     ],
     exports: [
-        PopoverComponent
+        UploadPopoverComponent
     ],
-    declarations: [PopoverComponent]
+    declarations: [UploadPopoverComponent]
 })
-export class PopoverModule {}
+export class PopoverModule { }

@@ -1,13 +1,17 @@
-<ion-label>Stories</ion-label>
+<div class="stories_label">
+  <ion-label>Stories</ion-label>
+</div>
 <ion-item lines="none">
   <ion-grid class="stories">
     <ion-row>
       <ion-item no-lines>
-        <div class="scroll-item">
-          <ion-avatar *ngFor="let image of images">
-            <img [src]='image.url'>
-            <span>{{image.user}}</span>
-          </ion-avatar>
+        <div class="overflow_scroll_gradient">
+          <div class="scroll-item">
+            <ion-avatar *ngFor="let image of images">
+              <img [src]='image.url'>
+              <span class="label">{{image.user}}</span>
+            </ion-avatar>
+          </div>
         </div>
       </ion-item>
     </ion-row>

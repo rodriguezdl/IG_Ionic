@@ -1,7 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {webSocket, WebSocketSubject} from 'rxjs/webSocket';
-import {Message} from '../services/backend/messages/message.model';
-import {MessageTypes} from '../services/backend/messages/message-types';
+import { Component, OnInit } from '@angular/core';
+import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
+import { Message } from '../services/backend/messages/message.model';
+import { MessageTypes } from '../services/backend/messages/message-types';
+import { PopoverController } from '@ionic/angular';
+import { UploadPopoverComponent } from '../upload-popover/upload-popover.component';
+import { PopoverComponent } from '../popover/popover.component';
 
 
 @Component({
@@ -32,27 +35,39 @@ export class DirectMessagePage implements OnInit {
     }
 
 
-    constructor() {
+    constructor(public popoverController: PopoverController) {
     }
 
     ngOnInit() {
         this.ws = webSocket('ws://127.0.0.1:44142');
         this.ws.asObservable().subscribe((msg: Message[]) => {
-                console.log('ASD\n');
+            console.log('ASD\n');
 
 
-                if (msg[0].type === MessageTypes.init) {
-                    this.currentUser = msg[0].msg;
-                } else {
-                    this.messages = this.messages.concat(msg);
-                }
-                /*this.messages.sort((a, b) => {
-                    return a.createdAt < b.createdAt ? -1 : 1;
-                });*/
-            },
+            if (msg[0].type === MessageTypes.init) {
+                this.currentUser = msg[0].msg;
+            } else {
+                this.messages = this.messages.concat(msg);
+            }
+            /*this.messages.sort((a, b) => {
+                return a.createdAt < b.createdAt ? -1 : 1;
+            });*/
+        },
             error => {
                 console.log('ASD:' + error);
             });
+    }
+
+    async presentPopover(ev: any) {
+        const popover = await this.popoverController.create({
+            component: UploadPopoverComponent,
+            componentProps: {},
+            cssClass: 'upload-popover',
+            event: ev,
+            translucent: true
+        });
+        return await popover.present();
+        console.log('clicked');
     }
 
 }

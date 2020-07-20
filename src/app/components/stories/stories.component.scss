@@ -1,33 +1,43 @@
 ion-title {
-    padding: 20px 0 20px 20px;
+  padding: 20px 0 20px 20px;
 }
 
-ion-avatar{
-   margin:10px;
+ion-avatar {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 ion-label {
-    margin-left: 20px;
-    padding: 0 0 10px 0;
+  margin-left: 20px;
+  padding: 0 0 20px 0;
 }
 
 .stories {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px 15px 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
 }
 
 .stories-scroll {
-    overflow: scroll;
-    white-space: nowrap;
+  overflow: scroll;
+  white-space: nowrap;
 }
 
 div.scroll-item {
-    overflow: auto;
-    white-space: nowrap;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  
 }
 
-div.scroll-item ion-avatar {
-    display: inline-block;
+.label {
+  padding: 10px 0 0 0;
+  font-size: small;
+}
 
+.stories_label {
+    margin: 0 0 10px 0;
 }
