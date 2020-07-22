@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
+import { Camera } from '@ionic-native/camera/ngx';
+import { ActionSheetController } from '@ionic/angular';
 
 
 @Component({
@@ -9,18 +11,16 @@ import { PopoverController } from '@ionic/angular';
 })
 export class UploadPopoverComponent implements OnInit {
 
-  constructor(public popover: PopoverController) { }
+  constructor(public popover: PopoverController, private camera: Camera, private actionSheetController: ActionSheetController) { }
 
   ngOnInit() { }
 
-<<<<<<< HEAD
 
-=======
   //       }
   //     }
   //   })
   // }
-  
+
   // Handles encoding of img when picked
   pickImage(sourceType) {
     const options: CameraOptions = {
@@ -63,5 +63,4 @@ export class UploadPopoverComponent implements OnInit {
     });
     await actionSheet.present();
   }
->>>>>>> upload component
 }
