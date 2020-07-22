@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { Camera } from '@ionic-native/camera/ngx';
 import { ActionSheetController } from '@ionic/angular';
+import {CameraOptions} from '@capacitor/core';
 
 
 @Component({
