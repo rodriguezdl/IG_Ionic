@@ -34,6 +34,9 @@ ion-footer {
   flex: 1;
 }
 
+.message-photo-icon-name {
+  margin-left: 16px;
+}
 
 .msg-btn {
   --padding-start: 0.5em;
@@ -64,6 +67,17 @@ ion-split-pane {
   bottom: 0;
 }
 
+<<<<<<< HEAD
 .spacer {
   flex-grow: 1;
 }
+=======
+#footer{
+  position: fixed;
+  bottom: 0;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+>>>>>>> 752cc23646f50b7fcfee6c6c77a6d4e771e523b8
