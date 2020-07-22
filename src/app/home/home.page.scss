@@ -3,7 +3,6 @@ ion-split-pane {
   --side-min-width: 40%;
 }
 
-
 #menu {
   width: 40%;
 }
@@ -30,4 +29,24 @@ img {
 
 ion-card {
   border-radius: 15px 15px 15px 15px;
+}
+
+@media (prefers-color-scheme: light) {
+  ion-toolbar {
+    --background: white;
+    color: black;
+  }
+  .verticalScrollContainer {
+    background: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-toolbar {
+    --baackground: black;
+    color: white;
+  }
+  .verticalScrollContainer {
+    background: black;
+  }
 }
