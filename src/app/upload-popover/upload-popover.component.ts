@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
-import { Camera } from '@ionic-native/camera/ngx';
-import { ActionSheetController } from '@ionic/angular';
+import {Component, OnInit} from '@angular/core';
+import {ActionSheetController, PopoverController} from '@ionic/angular';
+import {Camera} from '@ionic-native/camera/ngx';
+import {CameraOptions, CameraResultType} from '@capacitor/core';
 
 
 @Component({
@@ -25,10 +25,9 @@ export class UploadPopoverComponent implements OnInit {
   pickImage(sourceType) {
     const options: CameraOptions = {
       quality: 100,
-      sourceType,
-      destinationType: this.camera.DestinationType.FILE_URI,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
+      source: sourceType,
+      resultType: CameraResultType.Base64,
+      saveToGallery: false,
     };
     this.camera.getPicture(options).then((imageData) => {
       // imageData is either a base64 encoded string or a file URI

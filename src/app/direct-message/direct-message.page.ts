@@ -39,7 +39,7 @@ export class DirectMessagePage implements OnInit {
     }
 
     ngOnInit() {
-        this.ws = webSocket('ws://127.0.0.1:44142');
+        this.ws = webSocket('ws://10.0.2.2:44142');
         this.ws.asObservable().subscribe((msg: Message[]) => {
             console.log('ASD\n');
 
