@@ -1,0 +1,26 @@
+.login-photo {
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  width: 183px;
+  height: 190px;
+}
+.UserName-Password-text-area {
+  text-align: justify;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  width: fit-content;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  .login-button {
+    display: flex;
+    justify-content: right;
+  }
+}
